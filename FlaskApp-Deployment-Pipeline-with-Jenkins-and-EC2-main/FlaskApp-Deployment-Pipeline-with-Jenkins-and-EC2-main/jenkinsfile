@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git branch: 'main', changelog: false, poll: false, url: 'https://github.com/pavankumarindian/FlaskApp-Deployment-Pipeline-with-Jenkins-and-EC2.git'
+                git branch: 'main', changelog: false, poll: false, url: 'https://github.com/srikanth-d-svn/FlaskApp-Deployment.git'
             }
         }
         stage('Docker Build') {
